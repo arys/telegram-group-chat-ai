@@ -1,6 +1,9 @@
 import { TelegramClient } from "telegram";
-import { StringSession } from "telegram/sessions";
+import { StringSession } from "telegram/sessions/index.js";
 import readline from "readline";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const apiId = parseInt(process.env.TELEGRAM_API_ID);
 const apiHash = process.env.TELEGRAM_API_HASH;

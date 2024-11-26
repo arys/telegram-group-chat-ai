@@ -1,7 +1,7 @@
 import TelegramBot from 'node-telegram-bot-api';
 import dotenv from 'dotenv';
 import OpenAI from 'openai';
-import { connect, getMessages } from './gram';
+import { connect, getMessages } from './gram.js';
 dotenv.config();
 
 const bot = new TelegramBot(process.env.TELEGRAM_BOT_TOKEN, {polling: true});
